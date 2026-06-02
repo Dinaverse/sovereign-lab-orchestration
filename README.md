@@ -12,6 +12,7 @@ This repository documents the methodology and orchestration principles behind my
 
 - **Configuration Management:** Standardized management of multi-node services across heterogeneous hardware (Arch Cluster, Dell Precision, Raspberry Pi).
 - **Lifecycle Automation:** Automated deployment, update, and synchronization procedures for infrastructure components.
+- **AI-Driven Orchestration:** I leverage AI agents to assist in analyzing infrastructure health, diagnosing issues, and maintaining documentation integrity across the entire lab environment.
 - **Documentation Integrity:** Maintaining a single source of truth for architectural topologies and service dependencies.
 
 ## 🏗️ Technical Stack
