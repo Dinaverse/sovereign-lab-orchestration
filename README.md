@@ -24,6 +24,7 @@ This repository documents the methodology and orchestration principles behind my
 ---
 ## 📊 Laboratory Reports
 - **[Deployment Log: June 2026](docs/DEPLOYMENT_LOG_JUNE_2026.md)**: Logs for the latest lab hardening and monitoring deployment.
+- **[Prometheus Configuration Reference](docs/PROMETHEUS_CONFIG.md)**: Technical reference for Prometheus server flags and settings.
 
 ---
 *Orchestrating a resilient, sovereign infrastructure - Dina.*
