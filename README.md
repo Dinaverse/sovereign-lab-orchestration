@@ -22,4 +22,8 @@ This repository documents the methodology and orchestration principles behind my
 - **Infrastructure-as-Code:** Version-controlled configuration files for stable lab states.
 
 ---
+## 📊 Laboratory Reports
+- **[Deployment Log: June 2026](docs/DEPLOYMENT_LOG_JUNE_2026.md)**: Logs for the latest lab hardening and monitoring deployment.
+
+---
 *Orchestrating a resilient, sovereign infrastructure - Dina.*
