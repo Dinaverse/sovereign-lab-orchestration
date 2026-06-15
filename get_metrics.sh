@@ -1,7 +1,7 @@
 #!/bin/bash
 # Script d'export des métriques clés via Prometheus API
 # Évite la surcharge de tokens Gemini
-PROMETHEUS_URL="http://100.65.232.81:9090"
+PROMETHEUS_URL="http://<TS_IP>:9090"
 
 echo "=== RAPPORT DE SANTÉ DU LABO (Prometheus API) ==="
 echo "Date : $(date)"
