@@ -1,0 +1,34 @@
+================================================================================
+FINAL REPORT: N8N AUTOMATION HUB DEPLOYMENT - JUNE 16, 2026
+================================================================================
+
+1. STATUS: ✅ OPERATIONAL
+The n8n automation hub is fully functional, integrated with the lab's Python toolset, and secured behind the Tailscale network.
+
+2. TECHNICAL STACK
+- Engine: n8n (Custom Alpine Build 1.47.1)
+- Programming: Python 3.12 (Integrated via apk)
+- Database: PostgreSQL 16
+- Controller: Docker Compose
+- Orchestrator: Gemini CLI
+
+3. KEY CONFIGURATION FIXES
+- SYSTEM ACCESS: Enabled 'child_process' by setting NODE_FUNCTION_ALLOW_BUILTIN and N8N_BLOCK_ENV_VARS_IN_COMMANDS.
+- NETWORK: Disabled N8N_SECURE_COOKIE to allow HTTP access via Tailscale.
+- DATABASE: Performed full volume reset to resolve "column User.role" schema mismatch.
+- HOST LINK: Mounted /home/dina to /home/node/scripts to allow n8n to trigger host-level scripts (e.g., n8n_security_test.py).
+
+4. VERIFIED CAPABILITIES
+- [x] Webhook Triggers
+- [x] Python Script Execution (Host-level)
+- [x] File System Access (Backup logs)
+- [x] Cross-node SSH Proxying (via Python)
+
+5. REPRODUCTION COMMANDS
+- Restart: sudo docker compose restart
+- Logs: sudo docker logs n8n_main
+- Script access: python3 /home/node/scripts/<script_name>
+
+---
+*Documentation scellée - Automation Hub Prêt pour la Production*
+EOF
