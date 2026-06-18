@@ -1,0 +1,36 @@
+================================================================================
+PLAN DE CONTINUITÉ DES OPÉRATIONS & PORTABILITÉ DU LABORATOIRE
+================================================================================
+
+1. INTRODUCTION
+Ce document garantit la pérennité de votre laboratoire souverain, indépendamment de l'outil d'interface (Gemini CLI, Antigravity/Agy, ou tout autre). Le laboratoire repose sur des principes d'automatisation et de documentation qui transcendent l'interface utilisateur.
+
+2. PRÉSERVATION DE L'IDENTITÉ D'AGENT (GEMINI CLI)
+Pour migrer votre environnement Gemini CLI vers une nouvelle instance, les répertoires suivants sont critiques :
+- ~/.gemini/skills/ : Contient tous vos outils automatisés (lab-auditor, agent-controller, etc.).
+- ~/.gemini/config/ : Vos préférences utilisateur.
+
+Procédure de sauvegarde (Locale) :
+  tar -czf ~/Desktop/gemini_environment_backup.tar.gz -C /home/dina .gemini
+
+3. RÉSILIENCE PAR L'AUTOMATISATION (Indépendance de l'agent)
+Votre laboratoire ne dépend pas de l'agent IA, mais de votre infrastructure de code :
+- Ansible (IaC) : Playbooks dans ~/ansible/ pour configurer l'ensemble du parc.
+- Scripts shell : Scripts dans ~/agents/ et ~/monitoring/ qui exécutent la logique métier.
+- Documentation : Fichiers .txt sur le bureau qui servent de "single source of truth".
+- Git : Vos dépôts sont le cœur de votre savoir technique.
+
+4. PROTOCOLE DE MIGRATION (Vers Antigravity/Agy)
+Si une migration vers une interface différente est nécessaire :
+- Utiliser le skill `antigravity-support` pour les procédures de migration officielles.
+- Exécuter les playbooks Ansible sur les nœuds distants pour rétablir les configurations réseau, firewall et sécurité immédiatement.
+- Réimporter les compétences personnalisées (`.skill`) via la commande d'installation native de votre nouvelle interface.
+
+5. SÉCURITÉ ET SAUVEGARDE
+- Clé privée CA (`lab_ca`) : Doit rester stockée hors ligne sur un support chiffré.
+- Données persistantes : Syncthing assure la réplication entre Kali et Canwork189.
+- Secrets : Utilisations d'Ansible Vault pour chiffrer les variables sensibles (secrets.yml).
+
+---
+*Document de continuité opérationnelle — 15 juin 2026*
+EOF
