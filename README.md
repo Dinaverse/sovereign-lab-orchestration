@@ -6,14 +6,14 @@
 
 ## 🎯 Philosophy
 
-The sovereign lab is treated as a living system — not a collection of individual machines. Every configuration decision is reproducible, every service dependency is documented, and every node can be rebuilt from scratch using defined procedures. This repository captures the orchestration layer that holds it all together.
+The sovereign lab is treated as a living system - not a collection of individual machines. Every configuration decision is reproducible, every service dependency is documented, and every node can be rebuilt from scratch using defined procedures. This repository captures the orchestration layer that holds it all together.
 
 ---
 
 ## 🧩 Orchestration Principles
 
 ### 1. Infrastructure-as-Code
-Every service, network rule, and system configuration is defined in version-controlled files. No snowflake servers — everything is reproducible.
+Every service, network rule, and system configuration is defined in version-controlled files. No snowflake servers - everything is reproducible.
 
 ### 2. Resilience by Design
 Services are distributed across multiple nodes. No single point of failure for critical workloads. Monitoring detects degradation before it becomes an outage.
@@ -77,4 +77,4 @@ Every node ships metrics to Prometheus. Every anomaly triggers an alert. The Gra
 
 ---
 
-*A lab that documents itself — because infrastructure without documentation is just expensive hardware.*
+*A lab that documents itself - because infrastructure without documentation is just expensive hardware.*
